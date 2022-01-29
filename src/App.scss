@@ -1,3 +1,72 @@
 @use './styles/Main.module.scss';
 @use './styles/Header.module.scss';
 @use './Styles/Nav.module.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+
+h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 172px;
+}
+
+h2 {
+    font-family: 'Bellefair', serif;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 114px;
+}
+
+h3 {
+    font-family: 'Bellefair', serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 64px;
+}
+
+h4 {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.75ch;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.sub-h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.sub-h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2.35ch;
+    line-height: 17px;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+nav {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7ch;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+}
