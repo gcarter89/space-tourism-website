@@ -1,6 +1,14 @@
 @use './App.scss';
 
-html, body, #root {
+html, body, #root, h1, h2, h3, h4, h5, p {
     margin: 0;
+}
+
+html, body, #root {
     height: 100%;
 }
+
+#root > div {
+    height: 100%;
+}
+

@@ -1,13 +1,14 @@
 main {
-    height: inherit;
+    display: flex;
 }
-
 
 @media screen and (max-width: 425px) {
-    .home {
-        background-image: url('../Assets/home/background-home-mobile.jpg');
-        background-position: bottom;
-        background-size: cover;
-        background-repeat: no-repeat
+    main {
+        flex-direction: column;
+        margin-left: 24px;
+        margin-right: 24px;
     }
 }
+
+
+
