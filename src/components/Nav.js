@@ -8,6 +8,12 @@ export function Nav() {
     return (
         <nav className={styles.nav}>
             <img className={styles.logo} src={logo} alt="Space Tourism Logo" />
+            <div className={styles.navMenu}>
+                <a>HOME</a>
+                <a>DESTINATION</a>
+                <a>CREW</a>
+                <a>TECHNOLOGY</a>
+            </div>
             <button className={styles.navButton}>
                 <img className={styles.hamburgerOpen} src={hamburgerOpen} alt="Hamburger icon" />
                 <img className={styles.hamburgerClosed} src={hamburgerClosed} alt="Closed icon" />
