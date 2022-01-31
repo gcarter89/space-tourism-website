@@ -4,9 +4,16 @@
 
 @media screen and (max-width: 425px) {
     .main {
-        flex-direction: column;
         margin-left: 24px;
         margin-right: 24px;
+        align-items: unset;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
