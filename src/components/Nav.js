@@ -8,12 +8,10 @@ export function Nav() {
     return (
         <nav className={styles.nav}>
             <img className={styles.logo} src={logo} alt="Space Tourism Logo" />
-            <button>
+            <button className={styles.navButton}>
                 <img className={styles.hamburgerOpen} src={hamburgerOpen} alt="Hamburger icon" />
                 <img className={styles.hamburgerClosed} src={hamburgerClosed} alt="Closed icon" />
             </button>
-            
-            
         </nav>
     )
     
