@@ -1,3 +1,7 @@
+.nav-menu-button {
+    display: none;
+}
+
 @media screen and (max-width: 425px) {
     nav {
         display: flex;
@@ -8,6 +12,7 @@
         padding-right: 24px;
     
         .nav-menu-button {
+            display: block;
             background-color: transparent;
             border: none;
             cursor: pointer;
@@ -27,4 +32,6 @@
         }
     }
 }
+
+
 
