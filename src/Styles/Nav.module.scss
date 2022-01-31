@@ -1,22 +1,30 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 64px;
-    padding-left: 24px;
-    padding-right: 24px;
+@media screen and (max-width: 425px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 64px;
+        padding-left: 24px;
+        padding-right: 24px;
+    
+        .nav-menu-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
 
-    #logo {
-        height: fit-content;
+        #logo {
+            height: fit-content;
+        }
+    
+        #hamburger-open {
+            height: fit-content;
+        }
+    
+        #hamburger-closed {
+            display: none;
+            height: fit-content;
+        }
     }
-
-    #hamburger-open {
-        height: fit-content;
-    }
-
-    #hamburger-closed {
-        display: none;
-        height: fit-content;
-    }
-
 }
+

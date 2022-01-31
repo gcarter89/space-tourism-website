@@ -7,8 +7,12 @@ export function Nav() {
     return (
         <nav>
             <img id="logo" src={logo} alt="Space Tourism Logo" />
-            <img id="hamburger-open" src={hamburgerOpen} alt="Hamburger icon" />
-            <img id="hamburger-closed" src={hamburgerClosed} alt="Closed icon" />
+            <button className="nav-menu-button">
+                <img id="hamburger-open" src={hamburgerOpen} alt="Hamburger icon" />
+                <img id="hamburger-closed" src={hamburgerClosed} alt="Closed icon" />
+            </button>
+            
+            
         </nav>
     )
     
