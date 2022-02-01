@@ -106,6 +106,15 @@ nav {
     }
 }
 
+@media screen and (max-width: 525px) {
+    h1 {
+        font-size: 125px;
+        line-height: 125px;
+    }
+}
+
+
+
 @media screen and (max-width: 425px) {
     .home {
         background-image: url('./Assets/home/background-home-mobile.jpg');
@@ -140,4 +149,5 @@ nav {
         letter-spacing: unset;
     }
 }
+
 
