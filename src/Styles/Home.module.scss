@@ -1,14 +1,20 @@
+.homeSection {
+    width: 448px;
+}
+
 .exploreCircle {
-    justify-self: center;
+    height: 274px;
+    width: 274px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: flex-end;
     border-radius: 50%;
     border: none;
     background-color: white;
     margin-left: auto;
-    margin-right: auto;
+    
     h4 {
         color: rgba(0,0,0,1);
     }
@@ -16,6 +22,7 @@
 
 @media screen and (max-width: 768px) {
     .homeSection {
+        width: unset;
         text-align: center;
         max-width: 450px;
         margin-bottom: 156px;
@@ -24,6 +31,8 @@
     .exploreCircle {
         height: 242px;
         width: 242px;
+        align-self: unset;
+        margin-right: auto;
     }
 }
 
@@ -36,6 +45,7 @@
     .exploreCircle {
         height: 150px;
         width: 150px;
+        align-self: unset;
     }
 }
 
