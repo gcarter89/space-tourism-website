@@ -53,13 +53,19 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .line {
+        display: none;
+    }
+    .navMenu {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .nav {
         margin-left: 40px;
-
-        .line {
-            display: none;
-        }
     }
 
     .navMenu {
