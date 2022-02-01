@@ -4,6 +4,14 @@
     margin-left: 56px;
     align-items: center;
     justify-content: space-between;
+
+    .line {
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        width: 100%;
+        z-index: 1;
+        margin-left: 64px;
+        margin-right: -48px;
+    }
 }
 
 .navButton {
@@ -16,9 +24,10 @@
     height: 100%;
     background: rgba(255,255,255, 0.04);
     backdrop-filter: blur(81.5485px);
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 125px;
+    padding-right: 125px;
     color: rgba(255,255,255, 1);
+
     a {
         margin-left: 32px;
         height: 100%;
@@ -26,6 +35,10 @@
         align-items: center;
         border-bottom: 3px solid transparent;
         box-sizing: border-box;
+        span {
+            font-weight: bold;
+            margin-right: 11px;
+        }
     }
     a:hover {
         border-color: rgba(255,255,255,0.5);
@@ -38,12 +51,24 @@
     a:first-of-type {
         margin-left: 0;
     }
-    
 }
 
 @media screen and (max-width: 768px) {
     .nav {
         margin-left: 40px;
+
+        .line {
+            display: none;
+        }
+    }
+
+    .navMenu {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        span {
+            display: none;
+        }
     }
 }
 
@@ -94,10 +119,5 @@
         .hamburgerClosed {
             height: fit-content;
         }
-    
-
     }
 }
-
-
-
