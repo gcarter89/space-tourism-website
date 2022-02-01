@@ -46,6 +46,32 @@
     }
 }
 
+@media screen and (max-width: 625px) {
+    .nav {
+        margin-right: 40px;
+    }
+
+    .navButton {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .hamburgerOpen {
+        height: 32px;
+    }
+
+    .hamburgerClosed {
+        display: none;
+        height: 32px;
+    }
+}
+
 
 @media screen and (max-width: 425px) {
     .nav {
@@ -54,30 +80,21 @@
         padding-right: 24px;
         padding-top: 24px;
         margin-left: unset;
-    
-        .navButton {
-            display: block;
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-        }
-
-        .navMenu {
-            display: none;
-        }
+        margin-right: unset;
 
         .logo {
-            height: fit-content;
+            height: 40px;
         }
-    
+
         .hamburgerOpen {
             height: fit-content;
         }
-    
+
         .hamburgerClosed {
-            display: none;
             height: fit-content;
         }
+    
+
     }
 }
 
