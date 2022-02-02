@@ -7,10 +7,12 @@ export function Destination() {
 
     return (
         <section>
+
             <div className={styles.headingPlanet}>
                 <h5 className={styles.heading}><span>01</span>PICK YOUR DESTINATION</h5>
                 <img className={styles.planet} src={Moon} alt='planet or satellite' />
             </div>
+
             <div className={styles.menuSelection}>
                 <ul>
                     <li><button className={styles.active}>Moon</button></li>
@@ -26,18 +28,17 @@ export function Destination() {
             </div>
 
             <div className={styles.destinationStats}>
-            <div className={styles.stat}>
-                        <h5>AVG. DISTANCE</h5>
-                        <h4>384,000 KM</h4>
-                    </div>
-                    <div className={styles.stat}>
-                        <h5>EST. TRAVEL TIME</h5>
-                        <h4>3 DAYS</h4>
-                    </div>
-                {/* Info */}
-            </div>
+                <div className={styles.stat}>
+                    <h5>AVG. DISTANCE</h5>
+                    <h4>384,000 KM</h4>
+                </div>
 
-            
+                <div className={styles.stat}>
+                    <h5>EST. TRAVEL TIME</h5>
+                    <h4>3 DAYS</h4>
+                </div>
+            </div>     
+
         </section>
     )
 }

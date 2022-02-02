@@ -1,0 +1,79 @@
+.crewSelector {
+    display: flex;
+    justify-content: space-between;
+
+    .crewSelectorPoint {
+
+
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        opacity: 0.17;
+
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .heading {
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2.7px;
+        h5 {
+            color: rgba(255,255,255,1)
+        }
+        span {
+            padding-right: 16px;
+            font-weight: 700;
+            color: rgba(255,255,255,0.25);
+        }
+    }
+
+    .crewImageContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+        border-bottom: 1px solid #383B4B;
+
+        .crewImage {
+            height: 222px;
+            width: 162px;
+
+        }
+    }
+
+    .crewSelector {
+        height: 10px;
+        width: 88px;
+        margin-top: 32px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+
+        .crewSelectorPoint {
+            height: 10px;
+            width: 10px;
+        }
+    }
+
+    .crewCopy {
+        text-align: center;
+        margin-top: 32px;
+
+        h4 {
+            font-size: 16px;
+            line-height: 18.34px;
+            color: rgba(255,255,255,0.5);
+        }
+
+        h3 {
+            margin-top: 8px;
+            font-size: 28px;
+            line-height: 27.5px;
+            color: rgba(255,255,255,1);
+        }
+
+        p {
+            margin-top: 16px;
+        }
+    }
+}
