@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
 
+/* Desktop sizing */
+
 .home {
-    /* Desktop sizing */
+    
     background-image: url('./Assets/home/background-home-desktop.jpg');
     background-position: bottom;
     background-size: cover;
@@ -14,6 +16,27 @@
     p {
         margin-top: 24px;
     }
+}
+
+.destination {
+    background-image: url('./Assets/destination/background-destination-desktop.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.crew {
+    background-image: url('./Assets/crew/background-crew-desktop.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.technology {
+    background-image: url('./Assets/technology/background-technology-desktop.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
