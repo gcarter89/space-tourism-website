@@ -1,3 +1,5 @@
 export function Destination() {
-    return null;
+    return (
+        <h1>Destination</h1>
+    )
 }

@@ -1,3 +1,5 @@
 export function Crew() {
-    return null;
+    return (
+        <h1>CREW!</h1>
+    )
 }
