@@ -12,7 +12,7 @@ export function Crew() {
 
 
             <div className={styles.crewSelector}>
-                <button className={styles.crewSelectorPoint}></button>
+                <button className={`${styles.crewSelectorPoint} ${styles.active}`}></button>
                 <button className={styles.crewSelectorPoint}></button>
                 <button className={styles.crewSelectorPoint}></button>
                 <button className={styles.crewSelectorPoint}></button>
