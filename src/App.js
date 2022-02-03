@@ -39,7 +39,7 @@ function App() {
         <div className={mainClass}>
             <Header />
 
-            <main className={styles.main}>
+            <main className={location.pathname === '/technology' ? styles.mainTechnology : styles.main}>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="destination" element={<Destination />} />
