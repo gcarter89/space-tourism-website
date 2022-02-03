@@ -15,7 +15,7 @@ export function Technology() {
             </div>
 
             <div className={styles.technologySelect}>
-                <button className={styles.selectButton}><h4>1</h4></button>
+                <button className={`${styles.selectButton} ${styles.active}`}><h4>1</h4></button>
                 <button className={styles.selectButton}><h4>2</h4></button>
                 <button className={styles.selectButton}><h4>3</h4></button>
             </div>
