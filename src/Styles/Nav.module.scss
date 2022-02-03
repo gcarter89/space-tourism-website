@@ -94,6 +94,7 @@
     }
 
     .navMenu {
+        display: none;
         height: 100vh;
         width: 71%;
         position: fixed;
@@ -113,6 +114,9 @@
             margin-top: 32px;
             padding-left: 32px;
             margin-left: unset;
+            span {
+                display: block;
+            }
         }
 
         a:hover {
@@ -124,12 +128,15 @@
         }
     }
 
+    .open {
+        display: flex;
+    }
+
     .hamburgerOpen {
         height: 32px;
     }
 
     .hamburgerClosed {
-        display: none;
         height: 32px;
     }
 }
