@@ -22,6 +22,7 @@ function App() {
     useEffect(() => {
         if (location.pathname === '/') {
             setMainClass('home')
+            setMainStyle(styles.main);
         }
     
         if (location.pathname === '/destination') {
@@ -31,6 +32,7 @@ function App() {
     
         if (location.pathname === '/crew') {
             setMainClass('crew')
+            setMainStyle(styles.main);
         }
     
         if (location.pathname === '/technology') {
@@ -38,9 +40,6 @@ function App() {
             setMainStyle(styles.mainTechnology);
         }
     }, [location.pathname])
-
-
-
 
 
     return (
