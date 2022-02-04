@@ -35,6 +35,13 @@
         margin-right: unset;
         margin-bottom: 90px;
     }
+
+    .mainDestination {
+        margin-top: 40px;
+        margin-left: unset;
+        margin-right: unset;
+        margin-bottom: 90px;
+    }
 }
 
 @media screen and (max-width: 625px) {
@@ -46,6 +53,14 @@
 
 @media screen and (max-width: 425px) {
     .main {
+        margin-top: unset;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 56px;
+        align-items: unset;
+    }
+
+    .mainDestination {
         margin-top: unset;
         margin-left: 24px;
         margin-right: 24px;

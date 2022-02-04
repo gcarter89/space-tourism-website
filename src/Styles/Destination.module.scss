@@ -35,18 +35,18 @@
     }
 }
 
-@media screen and (max-width: 425px) {
-    .destinationSection {
-        // To be filled with flex-direction either in higher breakpoint or here
+.destinationCopy {
+    h1 {
+        text-transform: uppercase;
     }
+}
 
+@media screen and (max-width: 768px) {
     .headingPlanet {
         display: flex;
         flex-direction: column;
-        align-items: center;
-
         .heading {
-            text-align: center;
+            margin-left: 36px;
             letter-spacing: 2.7px;
             h5 {
                 color: rgba(255,255,255,1)
@@ -56,6 +56,76 @@
                 font-weight: 700;
                 color: rgba(255,255,255,0.25);
             }
+        }
+
+        .planet {
+            align-self: center;
+            margin-top: 60px;
+            height: 300px;
+            width: 300px;
+        }
+    }
+
+    .menuSelection {
+        margin-top: 56px;
+        font-size: 16px;
+        line-height: 19.2px;
+        letter-spacing: 2.7px;
+        ul {
+            justify-content: center;
+            li {
+                margin-left: 35px;
+                button {
+                    color: #D0D6F9;
+                    padding-bottom: 12px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .destinationCopy {
+        margin-top: 32px;
+        text-align: center;
+        h1 {
+            font-size: 80px;
+            line-height: 91.68px;
+        }
+        p {
+            margin-right: 98px;
+            margin-left: 98px;
+        }
+    }
+
+    .destinationStats {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 48px;
+        margin-left: 96px;
+        margin-right: 96px;
+        padding-top: 29px;
+        border-top: 1px solid #383B4B;
+        .stat {
+            text-align: center;
+            h4 {
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .destinationSection {
+        // To be filled with flex-direction either in higher breakpoint or here
+    }
+
+    .headingPlanet {
+        flex-direction: column;
+        align-items: center;
+
+        .heading {
+            margin-left: unset;
+            text-align: center;
         }
 
         .planet {
@@ -77,9 +147,7 @@
                 margin-left: 26px;
                 
                 button {
-                    color: #D0D6F9;
                     padding-bottom: 8px;
-                    cursor: pointer;
                 }
             }
         }
@@ -91,13 +159,21 @@
         h1 {
             font-size: 56px;
             line-height: 64px;
-            text-transform: uppercase;
+        }
+        p {
+            margin-right: unset;
+            margin-left: unset;
         }
     }
 
     .destinationStats {
+        display: block;
         border-top: 1px solid rgba(255,255,255,0.25);
         margin-top: 32px;
+        margin-left: unset;
+        margin-right: unset;
+        padding-top: unset;
+        
         
         .stat {
             padding-top: 32px;
@@ -115,3 +191,4 @@
         }
     }
 }
+

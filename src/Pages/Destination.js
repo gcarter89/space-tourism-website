@@ -6,7 +6,7 @@ export function Destination() {
 
 
     return (
-        <section>
+        <section className={styles.destinationSection}>
 
             <div className={styles.headingPlanet}>
                 <h5 className={styles.heading}><span>01</span>PICK YOUR DESTINATION</h5>
