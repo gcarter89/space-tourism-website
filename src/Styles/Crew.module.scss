@@ -17,40 +17,53 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
+    .crewSection {
+        display: flex;
+        flex-direction: column;
+    }
+
     .heading {
-        text-transform: uppercase;
-        text-align: center;
-        letter-spacing: 2.7px;
+        order: 1;
         color: rgba(255,255,255,1);
+        text-transform: uppercase;
+        margin-left: 38px;
+
         span {
-            padding-right: 16px;
             font-weight: 700;
             color: rgba(255,255,255,0.25);
+            padding-right: 16px;
         }
     }
 
-    .crewImageContainer {
-        display: flex;
-        justify-content: center;
-        margin-top: 32px;
-        border-bottom: 1px solid #383B4B;
+    .crewCopy {
+        order: 2;
+        text-align: center;
+        margin-top: 60px;
+        margin-left: 155px;
+        margin-right: 155px;
 
-        .crewImage {
-            height: 222px;
-            width: 162px;
+        h4 {
+            font-size: 24px;
+            line-height: 27.5px;
+            color: rgba(255,255,255,0.5);
+        }
 
+        h3 {
+            margin-top: 8px;
+            font-size: 40px;
+            line-height: 46px;
+            color: rgba(255,255,255,1);
         }
     }
 
     .crewSelector {
+        order: 3;
         height: 10px;
         width: 88px;
-        margin-top: 32px;
+        margin-top: 40px;
         margin-left: auto;
         margin-right: auto;
-
-
 
         .crewSelectorPoint {
             height: 10px;
@@ -58,21 +71,59 @@
         }
     }
 
-    .crewCopy {
+    .crewImageContainer {
+        display: flex;
+        justify-content: center;
+        order: 4;
+
+        .crewImage {
+            margin-top: 40px;
+            height: 572px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .crewSection {
+        display: block
+    }
+    .heading {
+        margin-left: unset;
         text-align: center;
+        letter-spacing: 2.7px;
+    }
+
+    .crewImageContainer {
         margin-top: 32px;
+        border-bottom: 1px solid #383B4B;
+
+        .crewImage {
+            height: 222px;
+            width: 162px;
+        }
+    }
+
+    .crewSelector {
+        margin-top: 32px;
+        .crewSelectorPoint {
+            height: 10px;
+            width: 10px;
+        }
+    }
+
+    .crewCopy {
+        margin-top: 32px;
+        margin-left: unset;
+        margin-right: unset;
 
         h4 {
             font-size: 16px;
             line-height: 18.34px;
-            color: rgba(255,255,255,0.5);
         }
 
         h3 {
-            margin-top: 8px;
             font-size: 28px;
             line-height: 27.5px;
-            color: rgba(255,255,255,1);
         }
 
         p {

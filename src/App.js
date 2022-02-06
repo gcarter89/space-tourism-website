@@ -32,7 +32,7 @@ function App() {
     
         if (location.pathname === '/crew') {
             setMainClass('crew')
-            setMainStyle(styles.main);
+            setMainStyle(styles.mainCrew);
         }
     
         if (location.pathname === '/technology') {

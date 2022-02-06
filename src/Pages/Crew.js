@@ -3,7 +3,7 @@ import styles from '../Styles/Crew.module.scss';
 
 export function Crew() {
     return (
-        <section>
+        <section className={styles.crewSection}>
             <h5 className={styles.heading}><span>02</span>Meet your crew</h5>
             <div className={styles.crewImageContainer}>
                 <img className={styles.crewImage} src={DouglasHurleyImage} alt="crew member"></img>
