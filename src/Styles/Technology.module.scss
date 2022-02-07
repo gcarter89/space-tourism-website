@@ -18,12 +18,14 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
     .heading {
+        margin-left: 40px;
+        margin-top: 40px;
         text-transform: uppercase;
-        text-align: center;
         letter-spacing: 2.7px;
         color: rgba(255,255,255,1);
+
         span {
             padding-right: 16px;
             font-weight: 700;
@@ -32,8 +34,8 @@
     }
 
     .imageContainer {
-        margin-top: 32px;
-        height: 170px;
+        margin-top: 60px;
+
         img {
             height: 100%;
             width: 100%;
@@ -41,12 +43,60 @@
     }
 
     .technologySelect {
-        width: 152px;
         display: flex;
         justify-content: space-between;
-        margin-top: 32px;
+        width: 210px;
+        margin-top: 56px;
         margin-left: auto;
         margin-right: auto;
+
+        .selectButton {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .technologyCopy {
+        width: 458px;
+        margin-top: 44px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        h5 {
+            font-size: 16px;
+        }
+
+        h3 {
+            margin-top: 16px;
+            font-size: 40px;
+            line-height: 45.84px;
+
+            text-transform: uppercase;
+            color: rgba(255,255,255,1);
+        }
+
+        p {
+            margin-top: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .heading {
+        margin-left: unset;
+        text-align: center;
+    }
+
+    .imageContainer {
+        margin-top: 32px;
+        height: 170px;
+    }
+
+    .technologySelect {
+        width: 152px;
+        margin-top: 32px;
+
         
         .selectButton {
             height: 40px;
@@ -55,26 +105,20 @@
     }
 
     .technologyCopy {
+        width: unset;
         margin-top: 26px;
         margin-left: 24px;
         margin-right: 24px;
-        text-align: center;
         h3 {
             margin-top: 8px;
             font-size: 24px;
-            text-transform: uppercase;
-            color: rgba(255,255,255,1);
+
             line-height: 27.5px;
         }
 
         h5 {
             font-size: 14px;
         }
-
-        p {
-            margin-top: 16px;
-        }
-
     }
 
 }
