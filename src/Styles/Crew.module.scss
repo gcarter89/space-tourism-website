@@ -20,7 +20,7 @@
 @media screen and (max-width: 768px) {
     .crewSection {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .heading {
@@ -28,6 +28,7 @@
         color: rgba(255,255,255,1);
         text-transform: uppercase;
         margin-left: 38px;
+        margin-top: 24px;
 
         span {
             font-weight: 700;
@@ -36,8 +37,12 @@
         }
     }
 
+    .crewSelectorCopyGroup {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .crewCopy {
-        order: 2;
         text-align: center;
         margin-top: 60px;
         margin-left: 155px;
@@ -55,10 +60,13 @@
             line-height: 46px;
             color: rgba(255,255,255,1);
         }
+
+        p {
+            margin-top: 16px;
+        }
     }
 
     .crewSelector {
-        order: 3;
         height: 10px;
         width: 88px;
         margin-top: 40px;
@@ -74,10 +82,10 @@
     .crewImageContainer {
         display: flex;
         justify-content: center;
-        order: 4;
+        margin-top: 40px;
+        // order: 4;
 
         .crewImage {
-            margin-top: 40px;
             height: 572px;
         }
     }
@@ -87,10 +95,16 @@
     .crewSection {
         display: block
     }
+
+    .crewSelectorCopyGroup {
+        display: block;
+    }
+
     .heading {
         margin-left: unset;
         text-align: center;
         letter-spacing: 2.7px;
+        margin-top: unset;
     }
 
     .crewImageContainer {
@@ -98,6 +112,7 @@
         border-bottom: 1px solid #383B4B;
 
         .crewImage {
+            margin-top: unset;
             height: 222px;
             width: 162px;
         }
