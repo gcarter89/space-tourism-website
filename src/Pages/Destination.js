@@ -13,6 +13,10 @@ export function Destination() {
                 <img className={styles.planet} src={Moon} alt='planet or satellite' />
             </div>
 
+
+
+            <div className={styles.menuCopyStatGroup}>
+
             <div className={styles.menuSelection}>
                 <ul>
                     <li><button className={styles.active}>Moon</button></li>
@@ -37,7 +41,8 @@ export function Destination() {
                     <h5>EST. TRAVEL TIME</h5>
                     <h4>3 DAYS</h4>
                 </div>
-            </div>     
+            </div> 
+            </div>    
 
         </section>
     )

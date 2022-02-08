@@ -1,13 +1,41 @@
 .destinationSection {
     display: flex;
-    flex-direction: column;
+    margin-top: 76px;
+    margin-left: 166px;
+    margin-right: 166px;
+    margin-bottom: 90px;
+}
+
+.menuCopyStatGroup {
+    margin-top: 64px;
+    margin-left: 156px;
+    
+}
+
+.headingPlanet {
+    .heading {
+        h5 {
+            color: rgba(255,255,255,1);
+            letter-spacing: 4.72px;
+        }
+        span {
+            padding-right: 28px;
+            font-weight: 700;
+            color: rgba(255,255,255,0.25);
+        }
+    }
+    .planet {
+        margin-top: 96px;
+        margin-left: 40px;
+    }
 }
 
 .menuSelection {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 18px;
     text-transform: uppercase;
-    color: white;
+    color: #D0D6F9;
+    font-size: 16px;
+    letter-spacing: 2.7px;
 
     .active {
         border-color: rgba(255,255,255,1) !important;
@@ -18,9 +46,10 @@
         display: flex;
         list-style: none;
         padding: 0;
+        margin: 0;
 
         li {
-
+            margin-left: 35px;
             button {
                 border-bottom: 3px solid rgba(255,255,255,0);
             }
@@ -35,32 +64,57 @@
     }
 }
 
+.destinationStats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid #383B4B;
+    h4 {
+        margin-top: 12px;
+    }
+}
+
+
 .destinationCopy {
+
     h1 {
         text-transform: uppercase;
+        font-size: 100px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .destinationSection {
+        display: flex;
+        flex-direction: column;
+        margin-top: unset;
+        margin-left: unset;
+        margin-right: unset;
+        margin-bottom: unset;
+    }
+
+    .menuCopyStatGroup {
+        margin-left: unset;
+        margin-top: unset;
+    }
+
     .headingPlanet {
         display: flex;
         flex-direction: column;
+        margin-left: 0;
         .heading {
             margin-left: 36px;
             letter-spacing: 2.7px;
-            h5 {
-                color: rgba(255,255,255,1)
-            }
             span {
                 padding-right: 18px;
-                font-weight: 700;
-                color: rgba(255,255,255,0.25);
             }
         }
 
         .planet {
             align-self: center;
             margin-top: 60px;
+            margin-left: unset;
             height: 300px;
             width: 300px;
         }
@@ -72,6 +126,7 @@
         line-height: 19.2px;
         letter-spacing: 2.7px;
         ul {
+
             justify-content: center;
             li {
                 margin-left: 35px;
@@ -98,7 +153,6 @@
     }
 
     .destinationStats {
-        display: flex;
         justify-content: space-around;
         margin-top: 48px;
         margin-left: 96px;
