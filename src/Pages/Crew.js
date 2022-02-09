@@ -10,19 +10,21 @@ export function Crew() {
             </div>
             
 
-
+        <div className={styles.crewSelectorCopyGroup}>
             <div className={styles.crewSelector}>
-                <button className={`${styles.crewSelectorPoint} ${styles.active}`}></button>
-                <button className={styles.crewSelectorPoint}></button>
-                <button className={styles.crewSelectorPoint}></button>
-                <button className={styles.crewSelectorPoint}></button>
-            </div>
+                    <button className={`${styles.crewSelectorPoint} ${styles.active}`}></button>
+                    <button className={styles.crewSelectorPoint}></button>
+                    <button className={styles.crewSelectorPoint}></button>
+                    <button className={styles.crewSelectorPoint}></button>
+                </div>
 
-            <div className={styles.crewCopy}>
-                <h4>COMMANDER</h4>
-                <h3>DOUGLAS HURLEY</h3>
-                <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
-            </div>
+                <div className={styles.crewCopy}>
+                    <h4>COMMANDER</h4>
+                    <h3>DOUGLAS HURLEY</h3>
+                    <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+                </div>
+        </div>
+
 
         </section>
     )
