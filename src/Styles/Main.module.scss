@@ -6,10 +6,20 @@
     margin-bottom: 132px;
 }
 
+.mainCrew {
+    margin-left: 166px;
+    margin-right: 166px;
+}
+
 @media screen and (max-width: 1200px) {
     .main {
         margin-right: 144px;
         margin-left: 144px;
+    }
+
+    .mainCrew {
+        margin-left: unset;
+        margin-right: unset;
     }
 }
 
