@@ -1,29 +1,62 @@
 import styles from '../Styles/Technology.module.scss';
-import launchVehiclePortrait from '../Assets/technology/image-launch-vehicle-portrait.jpg';
-import launchVehicleLandscape from '../Assets/technology/image-launch-vehicle-landscape.jpg';
+import LaunchVehiclePortrait from '../Assets/technology/image-launch-vehicle-portrait.jpg';
+import LaunchVehicleLandscape from '../Assets/technology/image-launch-vehicle-landscape.jpg';
+import SpaceportPortrait from '../Assets/technology/image-spaceport-portrait.jpg';
+import SpaceportLandscape from '../Assets/technology/image-spaceport-landscape.jpg';
+import SpaceCapsulePortrait from '../Assets/technology/image-space-capsule-portrait.jpg';
+import SpaceCapsuleLandscape from '../Assets/technology/image-space-capsule-landscape.jpg';
+import { useState } from 'react';
 
-export function Technology() {
+export function Technology({ data }) {
+
+    const [isActive, setIsActive] = useState(0);
+    const [images, setImages] = useState([LaunchVehiclePortrait, LaunchVehicleLandscape]);
+    const [selectedTechnology, setSelectedTechnology] = useState(data[0]);
+
+    function handleClick(event, index) {
+        event.preventDefault();
+        setIsActive(index);
+        setSelectedTechnology(data[index]);
+        
+        switch(data[index].name) {
+            case 'Launch vehicle':
+                setImages([LaunchVehiclePortrait, LaunchVehicleLandscape])  
+                break;
+            case 'Spaceport':
+                setImages([SpaceportPortrait, SpaceportLandscape])  
+                break;
+            case 'Space capsule':
+                setImages([SpaceCapsulePortrait, SpaceCapsuleLandscape])
+                break;
+            default:
+                break;
+        }
+
+    }
+
     return (
         <section className={styles.technologySection}>
             <h5 className={styles.heading}><span>03</span>Space Launch 101</h5>
 
             <div className={styles.imageContainer}>
                 <picture>
-                    <source srcSet={launchVehicleLandscape} media="(max-width: 768px)"/>
-                    <img src={launchVehiclePortrait} alt="space technology" />
+                    <source srcSet={images[1]} media="(max-width: 768px)"/>
+                    <img src={images[0]} alt="space technology" />
                 </picture>
             </div>
 
             <div className={styles.technologySelect}>
-                <button className={`${styles.selectButton} ${styles.active}`}><h4>1</h4></button>
-                <button className={styles.selectButton}><h4>2</h4></button>
-                <button className={styles.selectButton}><h4>3</h4></button>
+                {data.map((technology, index) => {
+                    return (
+                        <button key={index} className={(isActive === index) ? `${styles.selectButton} ${styles.active}` : styles.selectButton } onClick={(e) => handleClick(e, index)}><h4>{index + 1}</h4></button>
+                    )
+                })}
             </div>
 
             <div className={styles.technologyCopy}>
                 <h5>THE TERMINOLOGY...</h5>
-                <h3>Launch Vehicle</h3>
-                <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+                <h3>{selectedTechnology.name}</h3>
+                <p>{selectedTechnology.description}</p>
             </div>
 
 
