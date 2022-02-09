@@ -4,7 +4,7 @@ import launchVehicleLandscape from '../Assets/technology/image-launch-vehicle-la
 
 export function Technology() {
     return (
-        <section>
+        <section className={styles.technologySection}>
             <h5 className={styles.heading}><span>03</span>Space Launch 101</h5>
 
             <div className={styles.imageContainer}>

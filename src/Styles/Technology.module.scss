@@ -1,5 +1,54 @@
+.technologySection {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    margin-left: 166px;
+}
+
+.heading {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    text-transform: uppercase;
+    color: rgba(255,255,255,1);
+    margin-top: 28px;
+    span {
+        font-weight: 700;
+        color: rgba(255,255,255,0.25);
+        padding-right: 24px;
+    }
+}
+
+.technologyCopy {
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: 137px;
+    margin-left: 80px;
+    margin-right: 126px;
+    h5 {
+        font-size: 16px;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        color: rgba(255,255,255,1);
+    }
+
+    p {
+        width: 440px;
+    }
+}
+
 .technologySelect {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+    grid-column: 1;
+    margin-top: 137px;
+    margin-bottom: 137px;
+    justify-content: space-between;
     .selectButton {
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         border: 1px solid rgba(255,255,255,0.25);
         text-align: center;
@@ -18,18 +67,27 @@
     }
 }
 
+.imageContainer {
+    grid-row: 2;
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 26px;
+}
+
 @media screen and (max-width: 768px) {
+
+.technologySection {
+    display: block;
+}
+
     .heading {
         margin-left: 40px;
         margin-top: 40px;
-        text-transform: uppercase;
         letter-spacing: 2.7px;
-        color: rgba(255,255,255,1);
-
         span {
             padding-right: 16px;
-            font-weight: 700;
-            color: rgba(255,255,255,0.25);
+
         }
     }
 
@@ -43,12 +101,14 @@
     }
 
     .technologySelect {
-        display: flex;
+        
+        flex-direction: unset;
         justify-content: space-between;
         width: 210px;
         margin-top: 56px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: unset;
 
         .selectButton {
             width: 60px;
@@ -72,11 +132,11 @@
             font-size: 40px;
             line-height: 45.84px;
 
-            text-transform: uppercase;
-            color: rgba(255,255,255,1);
+
         }
 
         p {
+            width: unset;
             margin-top: 16px;
         }
     }
