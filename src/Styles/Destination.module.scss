@@ -171,9 +171,29 @@
     }
 }
 
+@media screen and (max-width: 625px) {
+    .headingPlanet {
+        .heading {
+            text-align: center;
+            margin-left: unset;
+        }
+    }
+
+    .destinationStats {
+        flex-direction: column;
+        .stat {
+            padding-top: 32px;
+        }
+        .stat:first-of-type {
+            padding-top: 0px;
+        }
+    }
+
+
+}
+
 @media screen and (max-width: 425px) {
-    // .destinationSection {
-    // }
+
 
     .headingPlanet {
         flex-direction: column;
@@ -244,6 +264,9 @@
                 font-size: 14px;
                 letter-spacing: 2.36px;
             }
+        }
+        .stat:first-of-type {
+            padding-top: 32px;
         }
     }
 }
