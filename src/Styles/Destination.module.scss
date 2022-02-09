@@ -9,6 +9,7 @@
 .menuCopyStatGroup {
     margin-top: 64px;
     margin-left: 156px;
+    margin-bottom: 32px;
 }
 
 .headingPlanet {
@@ -82,6 +83,9 @@
         text-transform: uppercase;
         font-size: 100px;
     }
+    p {
+        font-size: 19px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -97,6 +101,7 @@
     .menuCopyStatGroup {
         margin-left: unset;
         margin-top: unset;
+        margin-bottom: unset;
     }
 
     .headingPlanet {
@@ -147,6 +152,7 @@
             line-height: 91.68px;
         }
         p {
+            font-size: unset;
             margin-right: 98px;
             margin-left: 98px;
         }
