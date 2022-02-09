@@ -49,7 +49,7 @@ function App() {
             <main className={mainStyle}>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="destination" element={<Destination />} />
+                <Route path="destination" element={<Destination data={data.destinations}  />} />
                 <Route path="crew" element={<Crew />} />
                 <Route path="technology" element={<Technology />} />
 
