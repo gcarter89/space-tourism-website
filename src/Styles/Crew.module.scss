@@ -2,13 +2,13 @@
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
-    margin-top: 52px;
 }
 
 .heading {
     grid-row: 1;
     color: rgba(255,255,255,1);
     text-transform: uppercase;
+    margin-top: 44px;
     span {
         font-weight: 700;
         color: rgba(255,255,255,0.25);
@@ -80,6 +80,10 @@
 }
 
 @media screen and (max-width: 1300px) {
+    .crewSection {
+        margin-top: 52px;
+    }
+
     .crewSelectorCopyGroup {
         margin-right: unset;
     }
@@ -121,7 +125,7 @@
         color: rgba(255,255,255,1);
         text-transform: uppercase;
         // margin-left: 38px;
-        margin-top: 24px;
+        margin-top: 40px;
 
         span {
             font-weight: 700;
