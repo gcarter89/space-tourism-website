@@ -145,7 +145,16 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 975px) {
+    .headingPlanet {
+        .planet {
+            height: 360px;
+            width: 360px;
+        }
+    }
+}
+
+@media screen and (max-width: 868px) {
     .destinationSection {
         display: flex;
         flex-direction: column;
@@ -166,7 +175,7 @@
         flex-direction: column;
         margin-left: 0;
         .heading {
-            margin-left: 36px;
+            margin-left: 56px;
             letter-spacing: 2.7px;
             span {
                 padding-right: 18px;
@@ -209,9 +218,10 @@
             line-height: 91.68px;
         }
         p {
+            width: 444px;
+            margin-right: auto;
+            margin-left: auto;
             font-size: unset;
-            margin-right: 98px;
-            margin-left: 98px;
         }
     }
 
@@ -225,13 +235,21 @@
         .stat {
             text-align: center;
             h5 {
-                font-size: unset;
+                font-size: 20px;
             }
 
             h4 {
-                font-size: unset;
+                font-size: 28px;
                 margin-top: 12px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .headingPlanet {
+        .heading {
+            margin-left: 40px;
         }
     }
 }
@@ -257,8 +275,25 @@
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 525px) {
 
+    .destinationSection {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .destinationCopy {
+        p {
+            width: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .destinationSection {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
 
     .headingPlanet {
         flex-direction: column;
