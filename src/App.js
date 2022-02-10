@@ -2,11 +2,11 @@
 import { useLocation, Route, Routes } from 'react-router-dom';
 import appStyles from './App.scss';
 import styles from './Styles/Main.module.scss'
-import { Header } from "./Components/Header";
-import { Home } from './Pages/Home';
-import { Destination } from './Pages/Destination';
-import { Crew } from './Pages/Crew';
-import { Technology } from './Pages/Technology';
+import { Header } from "./Components/Header.js";
+import { Home } from './Pages/Home.js';
+import { Destination } from './Pages/Destination.js';
+import { Crew } from './Pages/Crew.js';
+import { Technology } from './Pages/Technology.js';
 import { useEffect, useState } from 'react';
 
 const data = require('./Assets/shared/data.json');
