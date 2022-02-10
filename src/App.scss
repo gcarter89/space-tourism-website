@@ -112,6 +112,12 @@ nav {
     letter-spacing: 2.7px;
 }
 
+@media screen and (max-width: 1024px) {
+    .technology {
+        overflow-x: hidden;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .home {
         background-image: url('./Assets/home/background-home-tablet.jpg');
@@ -122,6 +128,8 @@ nav {
     }
 
     .crew {
+        overflow-x: hidden;
+        justify-content: unset;
         background-image: url('./Assets/crew/background-crew-tablet.jpg');
     }
 

@@ -1,6 +1,6 @@
 .destinationSection {
     display: flex;
-    margin-top: 52px;
+    margin-top: 56px;
     margin-left: 166px;
     margin-right: 166px;
 }
@@ -85,7 +85,101 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
+    .destinationSection {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    .headingPlanet {
+        .heading {
+            margin-left: 48px;
+        }
+    }
+
+
+    .menuCopyStatGroup {
+        margin-left: 120px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .destinationSection {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .headingPlanet {
+        .heading {
+            margin-left: 72px;
+        }
+    }
+
+    .menuCopyStatGroup {
+        margin-left: 60px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .destinationSection {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .headingPlanet {
+        .heading {
+            margin-left: 88px;
+        }
+    }
+
+    .menuCopyStatGroup {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    .destinationSection {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .headingPlanet {
+        .heading {
+            margin-left: unset;
+        }
+    }
+
+    .destinationStats {
+        .stat {
+            h5 {
+                font-size: 20px;
+            }
+            h4 {
+                font-size: 28px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .destinationSection {
+        // margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .headingPlanet {
+        .planet {
+            height: 360px;
+            width: 360px;
+        }
+    }
+}
+
+@media screen and (max-width: 868px) {
     .destinationSection {
         display: flex;
         flex-direction: column;
@@ -106,7 +200,7 @@
         flex-direction: column;
         margin-left: 0;
         .heading {
-            margin-left: 36px;
+            margin-left: 56px;
             letter-spacing: 2.7px;
             span {
                 padding-right: 18px;
@@ -149,9 +243,10 @@
             line-height: 91.68px;
         }
         p {
+            width: 444px;
+            margin-right: auto;
+            margin-left: auto;
             font-size: unset;
-            margin-right: 98px;
-            margin-left: 98px;
         }
     }
 
@@ -164,16 +259,66 @@
         border-top: 1px solid #383B4B;
         .stat {
             text-align: center;
+            h5 {
+                font-size: 20px;
+            }
+
             h4 {
+                font-size: 28px;
                 margin-top: 12px;
             }
         }
     }
 }
 
+@media screen and (max-width: 768px) {
+    .headingPlanet {
+        .heading {
+            margin-left: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .headingPlanet {
+        .heading {
+            text-align: center;
+            margin-left: unset;
+        }
+    }
+
+    .destinationStats {
+        flex-direction: column;
+        .stat {
+            padding-top: 32px;
+        }
+        .stat:first-of-type {
+            padding-top: 0px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 525px) {
+
+    .destinationSection {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .destinationCopy {
+        p {
+            width: auto;
+        }
+    }
+}
+
 @media screen and (max-width: 425px) {
-    // .destinationSection {
-    // }
+    .destinationSection {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
 
     .headingPlanet {
         flex-direction: column;
@@ -244,6 +389,9 @@
                 font-size: 14px;
                 letter-spacing: 2.36px;
             }
+        }
+        .stat:first-of-type {
+            padding-top: 32px;
         }
     }
 }

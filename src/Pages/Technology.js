@@ -40,7 +40,7 @@ export function Technology({ data }) {
 
             <div className={styles.imageContainer}>
                 <picture>
-                    <source srcSet={images[1]} media="(max-width: 768px)"/>
+                    <source srcSet={images[1]} media="(max-width: 868px)"/>
                     <img src={images[0]} alt="space technology" />
                 </picture>
             </div>
