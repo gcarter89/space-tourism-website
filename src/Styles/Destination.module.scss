@@ -1,6 +1,6 @@
 .destinationSection {
     display: flex;
-    margin-top: 52px;
+    margin-top: 56px;
     margin-left: 166px;
     margin-right: 166px;
 }
@@ -91,6 +91,13 @@
         margin-right: 120px;
     }
 
+    .headingPlanet {
+        .heading {
+            margin-left: 48px;
+        }
+    }
+
+
     .menuCopyStatGroup {
         margin-left: 120px;
     }
@@ -100,6 +107,12 @@
     .destinationSection {
         margin-left: 100px;
         margin-right: 100px;
+    }
+
+    .headingPlanet {
+        .heading {
+            margin-left: 72px;
+        }
     }
 
     .menuCopyStatGroup {
@@ -114,6 +127,12 @@
         margin-right: 80px;
     }
 
+    .headingPlanet {
+        .heading {
+            margin-left: 88px;
+        }
+    }
+
     .menuCopyStatGroup {
         margin-left: 40px;
     }
@@ -123,6 +142,12 @@
     .destinationSection {
         margin-left: 60px;
         margin-right: 60px;
+    }
+
+    .headingPlanet {
+        .heading {
+            margin-left: unset;
+        }
     }
 
     .destinationStats {
