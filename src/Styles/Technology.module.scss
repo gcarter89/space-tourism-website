@@ -192,6 +192,12 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .heading {
+        margin-left: 40px;
+    }
+}
+
 @media screen and (max-width: 425px) {
     .heading {
         margin-left: unset;
