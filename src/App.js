@@ -1,6 +1,6 @@
 //sort this once we have the useLocation hook in place
 import { useLocation, Route, Routes } from 'react-router-dom';
-import appStyles from './App.scss';
+import './App.scss';
 import styles from './Styles/Main.module.scss'
 import { Header } from "./Components/Header.js";
 import { Home } from './Pages/Home.js';
