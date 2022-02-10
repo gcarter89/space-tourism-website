@@ -201,6 +201,12 @@
     }
 }
 
+@media screen and (max-width: 625px) {
+    .heading {
+        text-align: center;
+    }
+}
+
 
 @media screen and (max-width: 425px) {
     .crewSection {
