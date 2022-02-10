@@ -122,6 +122,8 @@ nav {
     }
 
     .crew {
+        overflow: hidden;
+        justify-content: unset;
         background-image: url('./Assets/crew/background-crew-tablet.jpg');
     }
 

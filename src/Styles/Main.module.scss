@@ -7,6 +7,7 @@
 }
 
 .mainCrew {
+    margin-top: auto;
     margin-left: 166px;
     margin-right: 72px;
 }
@@ -18,8 +19,8 @@
     }
 
     .mainCrew {
-        margin-left: unset;
-        margin-right: unset;
+        margin-left: 56px;
+        margin-right: 56px;
     }
 }
 
@@ -27,6 +28,10 @@
     .main {
         margin-left: 60px;
         margin-right: 60px;
+    }
+
+    .mainCrew {
+        
     }
 }
 
@@ -55,6 +60,11 @@
 
     .mainTechnology {
         margin-bottom: 90px;
+    }
+
+    .mainCrew {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }
 
